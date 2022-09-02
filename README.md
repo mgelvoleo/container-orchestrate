@@ -66,3 +66,5 @@ docker run -it -d ubuntu:22.04
  
  docker image rm nginx:latest
  
+ docker image inspect ubuntu:python-tree
+ 
