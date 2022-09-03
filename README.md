@@ -84,5 +84,26 @@ docker restart web01
 docker stop web01
 docker start web01
 docker logs web01
+docker inspect c16394710b7b
+docker inspect -f '{{.Config.Image}}' web01
+
+docker network ls
+
+docker network create frontend
+docker network create backend
+
+
+docker network connect frontend web01
+
+docker network connect backend web01
+
+docker network connect backend db1
+
+docker network inspect backend
+
+
+docker exec db1 apt-get update -y && docker exec db1 apt-get install iputils-ping -y
+
+docker exec web01 ping db1
 
  
