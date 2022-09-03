@@ -66,5 +66,23 @@ docker run -it -d ubuntu:22.04
  
  docker image rm nginx:latest
  
- docker image inspect ubuntu:python-tree
+docker image inspect ubuntu:python-tree
+ 
+
+ 
+docker exec 29ce1d99a43f ps -aux
+
+docker run -d -it --name test1 -e MYSQL_PASSWORD='SecurePassword' ubuntu:22.04 bash
+
+
+docker run -d --name web01 -h web01 -p 8000:80 nginx
+
+
+docker restart web01
+
+
+docker stop web01
+docker start web01
+docker logs web01
+
  
