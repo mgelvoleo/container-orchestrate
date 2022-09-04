@@ -194,7 +194,7 @@ docker swarm init --advertise-addr 192.168.56.10
 
 ```
 Bash Command
-docker swarm join --token SWMTKN-1-29miqz6havq2zlk5sx4lt3pphzi5rpuaol9bqnab7kacihwew3-5dp6kiemqhr33bkaes0ahpitc 192.168.56.10:2377
+docker swarm join --token NUMBER 192.168.56.10:2377
 ```
 
 
